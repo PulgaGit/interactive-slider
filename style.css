@@ -19,23 +19,29 @@ body {
 /* Slider container */
 .slider-container {
     text-align: center;
-    width: 90%;  /* Ensure the container can be wider, but not the full page width */
-    max-width: 800px;  /* Limit maximum width for very large screens */
+    width: 90%;
+    max-width: 800px;
 }
 
-/* Slider wrapper to hold labels and the slider */
-.slider-wrapper {
+/* Wrapper for the slider and labels */
+.labels-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
-    margin: 20px auto;
     position: relative;
+    margin-top: 10px;
+}
+
+/* Styling for the individual labels */
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
 /* Slider styling */
 .slider {
-    width: 100%;  /* 100% of the container width */
+    width: 100%;
     height: 20px;
     background: #ddd;
     border-radius: 5px;
@@ -52,4 +58,18 @@ body {
     -webkit-appearance: none;
     appearance: none;
     width: 30px;
-    height
+    height: 30px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Add a little styling to the slider when hovered */
+.slider:hover {
+    background: #bbb;
+}
+
+/* Add a transition effect on slider thumb for smoother interaction */
+.slider::-webkit-slider-thumb {
+    transition: background 0.3s ease;
+}
