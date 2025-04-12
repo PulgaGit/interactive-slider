@@ -1,23 +1,40 @@
-/* Container for the slider */
-.slider-container {
-    text-align: center;
-    margin-top: 50px; /* Optional: to add space from the top */
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* The wrapper for slider and labels */
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+/* Slider container */
+.slider-container {
+    text-align: center;
+}
+
+/* Wrapper for slider and labels */
 .slider-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%; /* You can adjust this to make the container wider or narrower */
+    width: 70%;  /* Adjust to your preference */
     margin: 20px auto;
     position: relative;
 }
 
 /* Slider styling */
 .slider {
-    width: 80%;  /* This controls the width of the slider. Adjust as needed */
-    height: 20px;
+    width: 100%;  /* Stretch slider width */
+    height: 15px;
     background: #ddd;
     border-radius: 5px;
     -webkit-appearance: none;
@@ -25,7 +42,7 @@
     outline: none;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-top: 20px; /* Adds some space between the slider and the labels */
+    margin-top: 20px; /* Adds space between slider and labels */
 }
 
 /* Slider thumb (the draggable part) */
@@ -38,3 +55,25 @@
     background: #4CAF50;
     cursor: pointer;
 }
+
+/* Left and Right labels */
+.labels-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Default text color */
+}
+
+.left {
+    color: #ff5733; /* Customize left label color */
+}
+
+.right {
+    color: #007bff; /* Customize right label color */
+}
+
