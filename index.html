@@ -1,2 +1,26 @@
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Slider</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to the CSS file -->
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="left">
+            <span id="leftValue">संसार 100</span>  <!-- Initial left value -->
+        </div>
+        
+        <input type="range" id="slider" class="slider" min="0" max="100" value="50">  <!-- Slider -->
+
+        <div class="right">
+            <span id="rightValue">गुरु 0</span>  <!-- Initial right value -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>  <!-- Link to the JavaScript file -->
+
+</body>
+</html>
