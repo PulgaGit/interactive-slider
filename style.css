@@ -1,3 +1,6 @@
+/* Example: Importing a Hindi font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap');
+
 /* Slider container */
 .slider-container {
     position: relative;
@@ -76,4 +79,9 @@
 .label.right {
     text-align: right;
     margin-right: 10px;
+}
+
+/* Apply font style to the Hindi text (गुरु, संसार) only */
+#leftValue, #rightValue {
+    font-family: 'Noto Sans Devanagari', sans-serif;
 }
