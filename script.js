@@ -10,8 +10,11 @@ slider.addEventListener("input", function() {
     // Calculate the left and right values based on the slider position
     const left = 100 - value;
     const right = value;
-    
-    // Update the values in the span elements
+
+    // Update the text content for the labels
     leftValue.textContent = `संसार ${left}`;
     rightValue.textContent = `गुरु ${right}`;
+    
+    // Update the background of the slider (colored portion)
+    slider.style.background = `linear-gradient(to right, #4CAF50 ${value}%, #ddd ${value}%)`;
 });
