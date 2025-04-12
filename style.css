@@ -1,3 +1,11 @@
+/* Slider container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* You can adjust this value */
+    margin: 0 auto; /* Center the slider */
+}
+
 /* Slider styling */
 .slider {
     width: 100%;
@@ -42,4 +50,30 @@
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid #fff; /* Optional: adds a white border around the thumb */
+}
+
+/* Labels container */
+.labels-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Label styling */
+.label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Left label */
+.label.left {
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Right label */
+.label.right {
+    text-align: right;
+    margin-right: 10px;
 }
