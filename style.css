@@ -19,22 +19,24 @@ body {
 /* Slider container */
 .slider-container {
     text-align: center;
+    width: 90%;  /* Ensure the container can be wider, but not the full page width */
+    max-width: 800px;  /* Limit maximum width for very large screens */
 }
 
-/* Wrapper for slider and labels */
+/* Slider wrapper to hold labels and the slider */
 .slider-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;  /* Adjust to your preference */
+    width: 100%;
     margin: 20px auto;
     position: relative;
 }
 
 /* Slider styling */
 .slider {
-    width: 100%;  /* Stretch slider width */
-    height: 15px;
+    width: 100%;  /* 100% of the container width */
+    height: 20px;
     background: #ddd;
     border-radius: 5px;
     -webkit-appearance: none;
@@ -42,38 +44,12 @@ body {
     outline: none;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-top: 20px; /* Adds space between slider and labels */
-}
-
-/* Slider thumb (the draggable part) */
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #4CAF50;
-    cursor: pointer;
-}
-
-/* Left and Right labels */
-.labels-container {
-    display: flex;
-    justify-content: space-between;
     margin-top: 20px;
 }
 
-.label {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333; /* Default text color */
-}
-
-.left {
-    color: #ff5733; /* Customize left label color */
-}
-
-.right {
-    color: #007bff; /* Customize right label color */
-}
-
+/* Slider thumb (draggable part) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height
