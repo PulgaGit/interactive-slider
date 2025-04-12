@@ -11,9 +11,9 @@ slider.addEventListener("input", function() {
     const left = 100 - value;
     const right = value;
 
-    // Update the text content for the labels
-    leftValue.textContent = `संसार ${left}`;
-    rightValue.textContent = `गुरु ${right}`;
+    // Update the text content for the labels (Swap positions)
+    leftValue.textContent = `गुरु ${right}`;  // Swap: गुरु on the left
+    rightValue.textContent = `संसार ${left}`; // Swap: संसार on the right
     
     // Update the background of the slider (colored portion)
     slider.style.background = `linear-gradient(to right, #4CAF50 ${value}%, #ddd ${value}%)`;
